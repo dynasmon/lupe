@@ -1,5 +1,5 @@
 
-# 🔍 Lupe - SSH Log Analyzer
+# Lupe - SSH Log Analyzer
 
 **Lupe** is a lightweight Bash script that analyzes SSH authentication logs (`/var/log/auth.log`). It provides a summary of successful logins, failed login attempts, invalid users, sudo commands, and the most active IPs — including the country and ISP for each IP.
 
@@ -7,34 +7,34 @@ Repository: https://github.com/dynasmon/lupe
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Shows successful SSH logins
-- ❌ Lists failed login attempts
-- 🚫 Detects invalid user attempts
-- 🔧 Displays sudo commands executed
-- 🌐 Lists most active IPs with **country** and **ISP**
-- 👥 Lists users who attempted to log in
-- 🛡️ Useful for server monitoring and security auditing
+- Shows successful SSH logins
+- Lists failed login attempts
+- Detects invalid user attempts
+- Displays sudo commands executed
+- Lists most active IPs with **country** and **ISP**
+- Lists users who attempted to log in
+- Useful for server monitoring and security auditing
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 📥 Clone the repository:
+### Clone the repository:
 
 ```bash
 git clone https://github.com/dynasmon/lupe.git
 cd lupe
 ```
 
-### 🔧 Make the script executable:
+### Make the script executable:
 
 ```bash
 chmod +x lupe.sh
 ```
 
-### 🚀 (Optional) Move to `/usr/local/bin` to run from anywhere:
+### (Optional) Move to `/usr/local/bin` to run from anywhere:
 
 ```bash
 sudo mv lupe.sh /usr/local/bin/lupe
@@ -54,7 +54,7 @@ bash lupe.sh
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - `curl`
 - `grep`
@@ -69,7 +69,7 @@ sudo apt install curl grep awk whois -y
 
 ---
 
-## 🧠 Usage
+## Usage
 
 Simply run:
 
@@ -85,7 +85,7 @@ lupe
 
 ---
 
-## 🛑 Example Output
+## Example Output
 
 ```
 IPs with country and ISP:
@@ -96,13 +96,13 @@ IPs with country and ISP:
 
 ---
 
-## 🌐 Notes
+## Notes
 
 - Uses [ipinfo.io](https://ipinfo.io/) API for IP lookups (free tier allows 1,000 requests per day).
 - Can be modified to use local `whois` instead of the API.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is intended for **security auditing, monitoring, and educational purposes only**. Use responsibly.
